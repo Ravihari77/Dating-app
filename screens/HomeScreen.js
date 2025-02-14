@@ -363,7 +363,7 @@ const HomeScreen = () => {
   const fetchMatches = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/matches?userId=${userId}`,
+        `http://10.0.2.2:3000/matches?userId=${userId}`,
       );
       const matches = response.data.matches;
       setProfilesData(matches);

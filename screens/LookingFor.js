@@ -26,7 +26,11 @@ const LookingFor = () => {
       }, []);
     
       const handleNext = () => {
-     
+        if (lookingFor.trim() !== '') {
+          // Save the current progress data including the name
+          saveRegistrationProgress('LookingFor', {lookingFor});
+        }
+        // Navigate to the next screen
         navigation.navigate('Hometown');
       };
       

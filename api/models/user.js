@@ -33,7 +33,7 @@ const userSchema = new Schema({
   },
   location: {
     type: String,
-    required: true,
+    required: false,
   },
   hometown: {
     type: String,
@@ -46,7 +46,7 @@ const userSchema = new Schema({
   ],
   lookingFor: {
     type: String,
-    required: true,
+    required: false,
   },
   imageUrls: [
     {

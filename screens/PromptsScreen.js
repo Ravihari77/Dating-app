@@ -60,7 +60,7 @@ const PromptsScreen = () => {
   const registerUser = async userData => {
     try {
       const response = await axios
-        .post('http://localhost:3000/register', userData)
+        .post('http://10.0.2.2:3000/register', userData)
         .then(response => {
           console.log(response);
           const token = response.data.token;
@@ -81,7 +81,7 @@ const PromptsScreen = () => {
 
   const handleNext = () => {
     // Save the current progress data including the image URLs
-    saveRegistrationProgress('Prompts', {prompts: route.params.prompts });
+    // saveRegistrationProgress('Prompts', {prompts: route.params.prompts });
 
     // Navigate to the next screen
     navigation.navigate('PreFinal'); // Navigate to the appropriate screen
