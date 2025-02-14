@@ -21,7 +21,7 @@ const ChatRoom = () => {
   const navigation = useNavigation();
   const route = useRoute();
   console.log(route?.params)
-  const socket = io('http://localhost:8000');
+  const socket = io('http://10.0.2.2:8000');
   const [messages, setMessages] = useState([]);
   socket.on('connect', () => {
     console.log('Connected to the Socket.IO server');
@@ -69,7 +69,7 @@ const ChatRoom = () => {
       const senderId = route?.params?.senderId;
       const receiverId = route?.params?.receiverId;
 
-      const response = await axios.get('http://localhost:3000/messages', {
+      const response = await axios.get('http://10.0.2.2:3000/messages', {
         params: {senderId, receiverId},
       });
 

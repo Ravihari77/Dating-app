@@ -92,12 +92,15 @@ const PreFinalScreen = () => {
     }
   };
   const registerUser = async () => {
-    console.log(userData);
     try {
-           
-      const token = "4C8xLsdXC1MUyfYmFFVo";
-      AsyncStorage.setItem('token', token);
-      setToken(token);
+      const response = await axios
+        .post('http://10.0.2.2:3000/register', userData)
+        .then(response => {
+          console.log(response);
+          const token = response.data.token;
+          AsyncStorage.setItem('token', token);
+          setToken(token)
+        });
       // Assuming the response contains the user data and token
 
       // Store the token in AsyncStorage

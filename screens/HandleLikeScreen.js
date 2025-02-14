@@ -23,7 +23,7 @@ const HandleLikeScreen = () => {
     try {
       const currentUserId = route?.params?.userId; // Example currentUserId
       const selectedUserId = route?.params?.selectedUserId; // Example selectedUserId
-      const response = await axios.post('http://localhost:3000/create-match', {
+      const response = await axios.post('http://10.0.2.2:3000/create-match', {
         currentUserId,
         selectedUserId,
       });
