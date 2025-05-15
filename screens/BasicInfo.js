@@ -4,7 +4,7 @@ import {
   View,
   SafeAreaView,
   Image,
-  Pressable,
+  Pressable,/*press*/
 } from 'react-native';
 import React ,{useEffect} from 'react';
 import LottieView from 'lottie-react-native';
