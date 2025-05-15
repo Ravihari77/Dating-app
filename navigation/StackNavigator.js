@@ -36,6 +36,7 @@ import ProfileDetailsScreen from '../screens/ProfileDetailsScreen';
 import Password from '../screens/Password';
 import SendLikeScreen from '../screens/SendLikeScreen';
 import HandleLikeScreen from '../screens/HandleLikeScreen';
+import ChatbotScreen from '../screens/ChatbotScreen';
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -179,6 +180,14 @@ const StackNavigator = () => {
         component={BirthScreen}
         options={{headerShown: false}}
       />
+
+
+<Stack.Screen
+        name="chat"
+        component={ChatbotScreen}
+        options={{headerShown: false}}
+      />
+
       <Stack.Screen
         name="Location"
         component={LocationScreen}

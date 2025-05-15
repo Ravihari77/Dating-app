@@ -4,7 +4,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 import {
   getRegistrationProgress,
-  saveRegistrationProgress,
+  saveRegistrationProgress, 
 } from '../registrationUtils';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useRoute} from '@react-navigation/native';
@@ -28,7 +28,7 @@ const PreFinalScreen = () => {
     // Check if the token is set and not in loading state
     if (token) {
       // Navigate to the main screen
-      navigation.navigate('MainStack', { screen: 'Main' });
+      navigation.replace("MainStack", { screen:"Main"});
     }
   }, [token, navigation]);
   const getAllUserData = async () => {

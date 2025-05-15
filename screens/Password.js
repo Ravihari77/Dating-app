@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   SafeAreaView
 } from 'react-native';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import {useNavigation} from '@react-navigation/native';
@@ -20,15 +20,31 @@ import {
 const Password = () => {
   const navigation = useNavigation();
   const [password, setPassword] = useState('');
-
-  const handleNext = () => {
-    if (password.trim() !== '') {
-      // Save the current progress data including the name
-      saveRegistrationProgress('Password', {password});
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [passwordStrength, setPasswordStrength] = useState('');
+  
+  const validatePassword = (pass) => {
+    const strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (strongRegex.test(pass)) {
+      setPasswordStrength('Strong');
+    } else {
+      setPasswordStrength('Weak - Use at least 8 characters, uppercase, lowercase, number, and special character.');
     }
-    // Navigate to the next screen
-    navigation.navigate('Birth');
   };
+  
+  const handleNext = () => {
+    if (password.trim() !== '' && password === confirmPassword) {
+      if (passwordStrength === 'Strong') {
+        saveRegistrationProgress('Password', {password});
+        navigation.navigate('Birth');
+      } else {
+        alert('Please enter a strong password.');
+      }
+    } else {
+      alert('Passwords do not match');
+    }
+  };
+
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
       <View style={{marginTop: 90, marginHorizontal: 20}}>
@@ -66,23 +82,31 @@ const Password = () => {
           secureTextEntry={true}
           autoFocus={true}
           value={password}
-          onChangeText={text => setPassword(text)}
-          style={{
-            width: 340,
-            marginVertical: 10,
-            fontSize: password ? 22 : 22,
-            marginTop: 25,
-            borderBottomColor: 'black',
-            borderBottomWidth: 1,
-            paddingBottom: 10,
-            fontFamily: 'GeezaPro-Bold',
+          onChangeText={text => {
+            setPassword(text);
+            validatePassword(text);
           }}
+          style={styles.input}
           placeholder="Enter your password"
           placeholderTextColor={'#BEBEBE'}
         />
+        <Text style={{ color: passwordStrength === 'Strong' ? 'green' : 'red', marginTop: 5 }}>
+          {passwordStrength}
+        </Text>
+        
+        <TextInput
+          secureTextEntry={true}
+          value={confirmPassword}
+          onChangeText={text => setConfirmPassword(text)}
+          style={styles.input}
+          placeholder="Confirm your password"
+          placeholderTextColor={'#BEBEBE'}
+        />
+
         <Text style={{color: 'gray', fontSize: 15, marginTop: 7}}>
           Note: Your details will be safe with us.
         </Text>
+
         <TouchableOpacity
           onPress={handleNext}
           activeOpacity={0.8}
@@ -90,7 +114,7 @@ const Password = () => {
           <MaterialCommunityIcons
             name="arrow-right-circle"
             size={45}
-            color="#581845"
+            color="#4B0082"
             style={{alignSelf: 'center', marginTop: 20}}
           />
         </TouchableOpacity>
@@ -101,4 +125,15 @@ const Password = () => {
 
 export default Password;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  input: {
+    width: 340,
+    marginVertical: 10,
+    fontSize: 22,
+    marginTop: 25,
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+    paddingBottom: 10,
+    fontFamily: 'GeezaPro-Bold',
+  }
+});

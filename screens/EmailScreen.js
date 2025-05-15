@@ -98,7 +98,7 @@ const EmailScreen = () => {
           <MaterialCommunityIcons
             name="arrow-right-circle"
             size={45}
-            color="#581845"
+            color="#4B0082"
             style={{alignSelf: 'center', marginTop: 20}}
           />
         </TouchableOpacity>

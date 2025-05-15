@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Alice",
+        "personality": "INFJ",
+        "age": 28,
+        "gender": "Female",
+        "interests": ["Psychology", "Art", "Reading", "Volunteering"],
+        "location": "New York",
+        "communication_style": "Deep and meaningful conversations",
+        "relationship_preference": "Long-term, emotionally deep connections"
+    },
+    {
+        "name": "Bob",
+        "personality": "ENFJ",
+        "age": 30,
+        "gender": "Male",
+        "interests": ["Leadership", "Teaching", "Traveling", "Music"],
+        "location": "Los Angeles",
+        "communication_style": "Warm, expressive, and engaging",
+        "relationship_preference": "Committed relationship with emotional depth"
+    },
+    {
+        "name": "Charlie",
+        "personality": "INFP",
+        "age": 26,
+        "gender": "Male",
+        "interests": ["Writing", "Poetry", "Fantasy books", "Nature walks"],
+        "location": "San Francisco",
+        "communication_style": "Thoughtful and introspective",
+        "relationship_preference": "Seeking deep emotional connection and shared ideals"
+    },
+    {
+        "name": "David",
+        "personality": "INTJ",
+        "age": 32,
+        "gender": "Male",
+        "interests": ["Technology", "Strategy games", "Philosophy", "Chess"],
+        "location": "Chicago",
+        "communication_style": "Logical and structured, prefers meaningful discussions",
+        "relationship_preference": "Looking for an intellectual and independent partner"
+    },
+    {
+        "name": "Eva",
+        "personality": "ESFJ",
+        "age": 27,
+        "gender": "Female",
+        "interests": ["Social events", "Cooking", "Helping others", "Dancing"],
+        "location": "Miami",
+        "communication_style": "Supportive, engaging, and emotionally expressive",
+        "relationship_preference": "Values stability and emotional warmth in relationships"
+    },
+    {
+        "name": "Frank",
+        "personality": "ISFJ",
+        "age": 29,
+        "gender": "Male",
+        "interests": ["Family time", "Gardening", "Photography", "History"],
+        "location": "Seattle",
+        "communication_style": "Gentle, thoughtful, and caring",
+        "relationship_preference": "Seeks a nurturing and supportive long-term relationship"
+    },
+    {
+        "name": "Grace",
+        "personality": "ENTP",
+        "age": 31,
+        "gender": "Female",
+        "interests": ["Debates", "Startups", "Adventure sports", "Stand-up comedy"],
+        "location": "Austin",
+        "communication_style": "Energetic, spontaneous, and playful",
+        "relationship_preference": "Enjoys exciting and intellectually stimulating relationships"
+    },
+    {
+        "name": "Henry",
+        "personality": "INTP",
+        "age": 33,
+        "gender": "Male",
+        "interests": ["Coding", "Mathematics", "Sci-fi movies", "Puzzle games"],
+        "location": "Boston",
+        "communication_style": "Analytical, prefers deep intellectual discussions",
+        "relationship_preference": "Seeks a partner who values independence and intellectual curiosity"
+    },
+    {
+        "name": "Isabella",
+        "personality": "ISTJ",
+        "age": 35,
+        "gender": "Female",
+        "interests": ["Finance", "Reading", "Organizing", "Classic Movies"],
+        "location": "Philadelphia",
+        "communication_style": "Direct and structured",
+        "relationship_preference": "Values responsibility and dependability in a partner"
+    },
+    {
+        "name": "Jack",
+        "personality": "ESTJ",
+        "age": 34,
+        "gender": "Male",
+        "interests": ["Management", "Fitness", "Public Speaking", "Hiking"],
+        "location": "Houston",
+        "communication_style": "Confident, direct, and decisive",
+        "relationship_preference": "Seeks an efficient, goal-oriented partner"
+    },
+    {
+        "name": "Kate",
+        "personality": "ISTP",
+        "age": 29,
+        "gender": "Female",
+        "interests": ["DIY Projects", "Motorcycles", "Gaming", "Exploring"],
+        "location": "Denver",
+        "communication_style": "Reserved but to the point",
+        "relationship_preference": "Prefers low-maintenance, adventurous partners"
+    },
+    {
+        "name": "Liam",
+        "personality": "ESTP",
+        "age": 28,
+        "gender": "Male",
+        "interests": ["Extreme Sports", "Business", "Parties", "Travel"],
+        "location": "Las Vegas",
+        "communication_style": "Charismatic and persuasive",
+        "relationship_preference": "Prefers spontaneous and exciting relationships"
+    },
+    {
+        "name": "Mia",
+        "personality": "ISFP",
+        "age": 26,
+        "gender": "Female",
+        "interests": ["Painting", "Animals", "Music", "Nature"],
+        "location": "Portland",
+        "communication_style": "Sensitive and artistic",
+        "relationship_preference": "Values emotional depth and shared experiences"
+    },
+    {
+        "name": "Noah",
+        "personality": "ESFP",
+        "age": 27,
+        "gender": "Male",
+        "interests": ["Acting", "Dancing", "Fitness", "Socializing"],
+        "location": "San Diego",
+        "communication_style": "Expressive and energetic",
+        "relationship_preference": "Wants a fun and passionate partner"
+    },
+    {
+        "name": "Olivia",
+        "personality": "ENTJ",
+        "age": 31,
+        "gender": "Female",
+        "interests": ["Leadership", "Strategy", "Finance", "Luxury travel"],
+        "location": "Washington DC",
+        "communication_style": "Assertive and strategic",
+        "relationship_preference": "Looks for a driven and ambitious partner"
+    },
+    {
+        "name": "Peter",
+        "personality": "ENFP",
+        "age": 30,
+        "gender": "Male",
+        "interests": ["Creative Writing", "Public Speaking", "Improvisation", "Psychology"],
+        "location": "San Antonio",
+        "communication_style": "Enthusiastic and engaging",
+        "relationship_preference": "Wants an open-minded and exciting partner"
+    }
+]

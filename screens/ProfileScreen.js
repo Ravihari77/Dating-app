@@ -18,6 +18,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useNavigation} from '@react-navigation/native';
 import {jwtDecode} from 'jwt-decode';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const ProfileScreen = () => {
   // const {isLoading, token} = useContext(AuthContext);
@@ -94,7 +95,8 @@ const ProfileScreen = () => {
   };
   
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+   // <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+   <ScrollView>
       <View
         style={{
           paddingHorizontal: 12,
@@ -246,7 +248,8 @@ const ProfileScreen = () => {
         }}>
         <Text style={{textAlign:"center",fontWeight:"500"}}>Logout</Text>
       </Pressable>
-    </SafeAreaView>
+      </ScrollView>
+   // </SafeAreaView>
   );
 };
 

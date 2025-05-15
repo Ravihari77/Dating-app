@@ -26,7 +26,7 @@ const BasicInfo = () => {
             fontFamily: 'GeezaPro-Bold',
             marginLeft: 20,
           }}>
-          You're one of a kind.
+        
         </Text>
         <Text
           style={{
@@ -36,7 +36,7 @@ const BasicInfo = () => {
             marginLeft: 20,
             marginTop: 10,
           }}>
-          You're profile should be too.
+         Your soulmate is just a step away!
         </Text>
       </View>
 
@@ -58,7 +58,7 @@ const BasicInfo = () => {
 
       <Pressable
       onPress={() => navigation.navigate("Name")}
-        style={{backgroundColor: '#900C3F', padding: 15, marginTop: 'auto'}}>
+        style={{backgroundColor: '#4B0082', padding: 15, marginTop: 'auto'}}>
         <Text
           style={{
             textAlign: 'center',

@@ -39,7 +39,7 @@ const NameScreen = () => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
       <Text style={{marginTop: 50, textAlign: 'center', color: 'gray'}}>
-        NO BACKGROUND CHECKS ARE CONDUCTED
+      WHAT IS YOUR NAME? LET'S GET STARTED 
       </Text>
       <View style={{marginTop: 30, marginHorizontal: 20}}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -108,7 +108,7 @@ const NameScreen = () => {
             placeholderTextColor={'#BEBEBE'}
           />
           <Text style={{fontSize: 15, color: 'gray', fontWeight: '500'}}>
-            Last match is optional.
+            Last name is optional.
           </Text>
         </View>
         <TouchableOpacity
@@ -118,7 +118,7 @@ const NameScreen = () => {
           <MaterialCommunityIcons
             name="arrow-right-circle"
             size={45}
-            color="#581845"
+            color="#4B0082"
             style={{alignSelf: 'center', marginTop: 20}}
           />
         </TouchableOpacity>
